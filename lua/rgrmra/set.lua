@@ -1,3 +1,6 @@
+vim.opt.encoding = 'utf-8'
+vim.scriptencoding = 'utf-8'
+
 vim.opt.guicursor = ""
 
 vim.opt.number = true
@@ -10,7 +13,7 @@ vim.opt.shiftwidth = 4
 
 vim.opt.smartindent = true
 
-vim.opt.wrap = false
+vim.opt.wrap = true
 
 vim.opt.swapfile = false
 vim.opt.backup = false
@@ -36,3 +39,14 @@ vim.opt.clipboard = unnamedplus
 vim.opt.ttyfast = true
 
 vim.g.mapleader = " "
+
+vim.opt.list = true
+vim.opt.showbreak = "↪ "
+vim.opt.listchars = {
+	eol = '↲',
+	tab = '→ ',
+	nbsp = '␣',
+	trail = '•',
+	extends = '>',
+	precedes = '<'
+}
